@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahil Lakhani Personal Portfolio
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Analyst</p>
+            <h1>Hi, I'm <span>Rahil</span><br> Lakhani</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> 
+                    Hi, I’m a driven Financial Analyst with a recent degree in Organizational Management. I specialize in data analysis and visualization, using tools like SQL,Tableau,BigQuery,R, and the Microsoft Office Suite (including VBA) to provide actionable insights that drive informed decision-making. My passion lies in making complex financial data both accessible and impactful.
+                </p>
+                   <p> Beyond the world of finance, I’m a creative at heart. I love photography, whether it’s capturing moments with my camera or shooting stunning drone footage. In my free time, I enjoy playing the guitar, working out, and even dabbling in modeling because—why not? I also love video editing, drawing sketches, particularly anime characters, and I find peace in writing poems. You’ll often find me on a hiking trail, enjoying nature’s beauty.
+                   </p> 
+                    <p>Let’s connect—I’m always up for exciting projects, whether it’s diving into data or creating something new!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Cleaning </span><br>SQL, Big Querry </li>
+                        <li><span>Data Visualization</span><br>Tableau,R,Excel</li>
+                        <li><span>Financial Analysis </span><br>Excel, Critical Thinking </li>
+                    </ul>
+                </div>
+                <!-- <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span></span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                    </ul>
+                </div> -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Politechnika Wroclaw </span><br>Organizational Management</li>
+                        <li><span>Coursera </span><br>Google data Analytics</li>
+                        <li><span>Udemy</span><br>Tableau A-Z</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Data cleaning </h2>
+                <p>I used SQL, R, and BigQuery to clean large datasets, focusing on:
+
+                    Validation & Deduplication: Removing errors and duplicates.
+                    Standardization: Ensuring consistent formats.
+                    Handling Missing Data: Imputation and selective removal.
+                    Error Correction: Automated using VBA.
+                    Results: Improved data accuracy by 90%, enabling better financial analysis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Data Visualization </h2>
+                <p>I specialize in creating clear, impactful data visualizations using tools like Tableau, R, and SQL to turn complex data into actionable insights. Key aspects include:
+
+                    Interactive Dashboards: Designed dynamic, user-friendly dashboards in Tableau to visualize key metrics and trends.
+                    Data Storytelling: Used R to create custom visuals, making complex data easier to understand and actionable.
+                    Trend Analysis: Leveraged SQL to extract and visualize data trends for informed decision-making.
+                    Results: Enhanced decision-making through insightful visuals, enabling faster interpretation of financial and operational data.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Financial Analysis </h2>
+                <p>I use SQL, R, and Excel to analyze financial data, forecast trends, and create reports. My work helps improve financial planning and drive better business decisions.
+
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Visualization </h3>
+                    <p>Ukbanksdashboard show that interactive ability gives diffrent and more insight in just one board</p>
+                    <br>
+                    <p>VisualizationWOdashboard is the continuation and visualize after cleaning data</p>
+                    <a href="https://public.tableau.com/app/profile/rahil.lakhani4848/vizzes#!/?newProfile=true&activeTab=0"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Data Cleaning </h3>
+                    <p>Project2.sql Show cases the potential of cleaning data and how to make it Understandable</p>
+
+                    <br>
+                        <p>SQLQuerryfinalfortabeau.sql show the data that has been cleaned to have a further use with Tableau to visualize it Efectively</p>
+                    <a href="https://github.com/dexter-cmd/PortfolioProjtect"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <!---  <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> RahilirfanLakhani@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +48 739625835</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rahil.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0T6W9d96VrcZFaVRb53gOhoz4V6NChiTdYRPDBrY0_9x7n-CBFtR1tWLE0VXpw-HkhQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
